@@ -3,50 +3,77 @@
 ## prerequisites
 pip install -r requirements.txt
 
-## deploy
+## deploy NFTs
 ```
-from scripts.deployment import *
+from scripts.deployment import main as deploy_main
+deploy_main(owner_address='ownder wallet address', owner_private_key='owner private key', network='network e.g. ropsten')
+```
 
-main(owner_address='ownder wallet address', owner_private_key='owner private key', network='network e.g. ropsten')
+## deploy Referee Contract
+```
+from scripts.deployment_referee import main as deploy_referee
+deploy_referee(owner_address='ownder wallet address', owner_private_key='owner private key', network='network e.g. ropsten')
+```
+
+## create teams
+```
+from scripts.deployment_referee import create_teams
+create_teams()
+```
+
+## get winner
+```
+from scripts.deployment_referee import get_winner
+get_winner()
+```
+
+# update health daily
+```
+from scripts.contract_interaction import main as interact_main
+interact_main(owner_address='ownder wallet address', owner_private_key='owner private key', network='network e.g. ropsten')
 ```
 
 ## NFTs deployed on ropsten
 1. {'name': 'CIS', 'symbol': 'CIS-Play', 'detail': 'CISCO Systems (Nasdaq - US)'} 
 
-    Ropsten Contract deployed to 0xea10A3d164cF984cF778C883E2e5EDA449C809bF
+    Ropsten Contract deployed to 0x4Fef796703eE7b96bcfDed3A305c54D1b420a2e9
 
 2. {'name': 'TCS', 'symbol': 'TCS-Play', 'detail': 'Tata Consultancy (NSE - India)'}
 
-    Ropsten! Contract deployed to 0x6617A7a504dA72C402F31658F77426DAbF96954e
+    Ropsten! Contract deployed to 0x660EbB492b247AA454933e0f459EEc90d2ADA62D
 
 3. {'name': 'RIL', 'symbol': 'RIL-Play', 'detail': 'Reliance Industries (NSE - India)'}
 
-   Ropsten! Contract deployed to 0x05baF93c5Dd79615b85Be958C35417F0F95a5805
+   Ropsten! Contract deployed to 0xD4251fD84cED3F78a923429c105dcd45fA50b099
 
 4. {'name': 'SOC', 'symbol': 'SOC-Play', 'detail': 'Saudi Arabian Oil Company (Saudi - Saudia Arabia)'}
 
-   Ropsten! Contract deployed to 0xAacA2997a0a7371C89eA083906909d25d9Cd23cf
+   Ropsten! Contract deployed to 0xaf2397F8cf84F4ebEBbC8b01eaAbc167AF369972
 
 5. {'name': 'CWP', 'symbol': 'CWP-Play', 'detail': 'China Western Power Industrial Co., Ltd. (Shenzen - China)'}
 
-    Ropsten! Contract deployed to 0x8Be3c82841d66B523b06653E200801Fb59266B81
+    Ropsten! Contract deployed to 0x3F611196B7c31962D671170A2fE0476444bf4eA8
 
 6. {'name': 'BBS', 'symbol': 'BBS-Play', 'detail': 'Banco do Brasil S.A. (Sao Paulo - Brazil)'}
 
-    Ropsten! Contract deployed to 0x834432515341AFBcE33D1Ac942f38c3EFAFE48f3
+    Ropsten! Contract deployed to 0x347A3729FbCFF2888f4d86D6af453826aE82D9e0
 
 7. {'name': 'BBP', 'symbol': 'BBP-Play', 'detail': 'Balfour Beatty plc (LSE - UK)'}
 
-    Ropsten! Contract deployed to 0xb0414FCAA596A0efc5b081B27DC6b45D31772bB2
+    Ropsten! Contract deployed to 0x8C7C37048Da2Aeb0bF7a963eb282730F2FE83494
 
 8. {'name': 'ZMT', 'symbol': 'ZMT-Play', 'detail': 'Zomato (NSE - India)'}
 
-    Ropsten! Contract deployed to 0x303BCBa06957266AE96773001234b57619CE0FFf
+    Ropsten! Contract deployed to 0x7774440594b04363563ac2aEF4CDBaE6Ecb17802
 
 9. {'name': 'JZH', 'symbol': 'JZH-Play', 'detail': 'Jiangsu Zhongchao Holding Co., Ltd. (Shenzen - China)'}
 
-    Ropsten! Contract deployed to 0xEA2CE4B60D03e19F4632e2117Cafe8c6E23a62f7
+    Ropsten! Contract deployed to 0x80fEE58E6EaC4173B994f5EC61Cda13aB7f63533
 
 10. {'name': 'TMC', 'symbol': 'TMC-Play', 'detail': 'Toyota Motor Corporation (Tokyo - Japan)'}
 
-    Ropsten! Contract deployed to 0x6Add5F11F589078b9A9081b4d47C963457cAd69e
+    Ropsten! Contract deployed to 0x0B28DF3E1e72CFcA3d822DB28A439f2911987531
+
+
+## Referee Contract deployed on ropsten
+0xbAFc9Dd88Ed6cf800895945bb421B5fdA167217F
